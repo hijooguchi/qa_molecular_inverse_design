@@ -1,0 +1,19 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      shm_size: '1TB'
+    shm_size: '1TB'
+    image: cddd2s
+    volumes:
+      - /home/deguchi/cddd:/cddd2s
+      - /home/deguchi/smiles_transformer/data/tranche_data:/dataset
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
