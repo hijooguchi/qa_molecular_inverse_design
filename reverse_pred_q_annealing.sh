@@ -8,4 +8,5 @@ python3 reverse_pred_q_annealing.py \
 --penalty 0.0 \
 --iter 10 \
 --n_sa_sampling 1 \
---method 'qa'
+--method 'qa'  \
+--dwave_solver_token 'INPUT_ON_YOUR_OWN_TOKEN'

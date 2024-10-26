@@ -3,12 +3,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      shm_size: '1TB'
-    shm_size: '1TB'
-    image: cddd2s
+      shm_size: '100GB'
+    shm_size: '100GB'
+    image: qa_mid
     volumes:
-      - /home/deguchi/cddd:/cddd2s
-      - /home/deguchi/smiles_transformer/data/tranche_data:/dataset
+      - /home/deguchi/qa_mid:/qa_mid
     tty: true
     deploy:
       resources:

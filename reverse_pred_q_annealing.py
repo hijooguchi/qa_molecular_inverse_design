@@ -25,8 +25,7 @@ RDLogger.DisableLog('rdApp.*')
 
 
 SOLVER = 'hybrid_binary_quadratic_model_version2p'
-# Input on your own token
-TOKEN = 'q2Tb-3a852ac5c6fec7dbfa349396f81610177b23c912'
+TOKEN = '######'  # Input on your own token
 ENDPOINT = 'https://cloud.dwavesys.com/sapi'
 
 
@@ -72,7 +71,7 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         '--n_sa_sampling',
         type=int,
-        default=10000,
+        default=1,
         help='number of Simulated Annealing sampling',
     )
     parser.add_argument(

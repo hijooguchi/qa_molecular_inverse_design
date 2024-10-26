@@ -25,7 +25,8 @@ RUN pip3 install --upgrade pip \
         dwave-system \
     && pip3 install --no-cache-dir \
         numpy \
-        dwave-system
+        dwave-system \
+        dwave-neal
 
-WORKDIR /cddd2s
+WORKDIR /qa_mid
 CMD ["/bin/bash"]
