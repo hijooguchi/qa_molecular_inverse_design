@@ -6,8 +6,9 @@ services:
       shm_size: '100GB'
     shm_size: '100GB'
     image: qa_mid
+    container_name: qa_mid
     volumes:
-      - /home/deguchi/qa_mid:/qa_mid
+      - /home/deguchi/qa_molecular_inverse_design:/qa_mid
     tty: true
     deploy:
       resources:
