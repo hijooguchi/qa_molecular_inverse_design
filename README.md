@@ -1,27 +1,25 @@
 # Quantum annealing molecular inverse design
 
-Implementation of the paper [_"A property–agnostic framework for scalable molecular inverse design via quantum annealing"_](INPUT_LINK) by Yuki Deguchi and Masato Taki.
+Implementation of the paper [_"A property–agnostic framework for scalable molecular inverse design via quantum annealing"_](https://doi.org/10.1039/D6DD00012F) by Yuki Deguchi and Masato Taki.
 
-<!-- <img src="./published_data/architecture_image.png" width="100%" height="100%"> -->
-(Architectural visuals are unavailable until the paper is published.)
+<img src="./published_data/architecture_image.png" width="100%" height="100%">
 
 If you are using the code in your research, please cite the corresponding publication:
 
 Y. Deguchi and M. Taki. 
 A property–agnostic framework for scalable molecular inverse design via quantum annealing. 
-XXXXX, XX, XXX (20XX). LINK
+*Digital Discovery* (2026). http://dx.doi.org/10.1039/D6DD00012F
 
-    @Article{INPUT,
-        author={Deguchi, Yuki and Taki, Masato},
-        title={A property–agnostic framework for scalable molecular inverse design via quantum annealing},
-        journal={INPUT},
-        year={INPUT},
-        volume={INPUT},
-        number={INPUT},
-        pages={INPUT},
-        issn={INPUT},
-        doi={INPUT},
-        url={INPUT},
+    @Article{D6DD00012F,
+        author="Deguchi, Yuki and Taki, Masato",
+        title="A property–agnostic framework for scalable molecular inverse design via quantum annealing",
+        journal="Digital Discovery",
+        year="2026",
+        pages="-",
+        publisher="RSC",
+        doi="10.1039/D6DD00012F",
+        url="http://dx.doi.org/10.1039/D6DD00012F",
+        abstract  ="Technologies for designing molecules with desired properties have the potential to drive innovation across a wide range of fields. Molecular inverse design typically involves three key tasks: chemical latent space representation{,} property prediction{,} and molecule generation. While deep learning models trained on large molecule-property datasets can address all three tasks within a unified framework{,} they often require substantial property-specific retraining when targeting new molecular properties{,} limiting scalability. In this work{,} we propose an algorithmic framework that integrates machine learning and quantum annealing by explicitly decoupling chemical latent space representation{,} property prediction{,} and molecule generation. By freezing deep molecular representations learned from large datasets and separating molecule generation from deep learning{,} the proposed method enables inverse design for new target properties at a low training cost{,} requiring only lightweight model adaptation. Using quantum annealing{,} 98% of the generated molecules were novel and exhibited properties close to the desired targets{,} indicating efficient exploration beyond the training distribution. Moreover{,} the molecular generation rate was approximately six times faster than that of classical optimization algorithms. These results demonstrate that modularizing molecular inverse design into complementary learning and optimization components provides a scalable and effective alternative to monolithic deep learning-based approaches."
     }
 
 The code provided in this repository allows to collect molecular data from ZINC-22<sup>1</sup>, preprocess the collected data, train the molecular property prediction models and generate molecules from the specified property values. 
